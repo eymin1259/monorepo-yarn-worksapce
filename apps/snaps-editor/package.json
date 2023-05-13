@@ -1,5 +1,5 @@
 {
-  "name": "snaps-editor",
+  "name": "@snaps/snaps-editor",
   "version": "0.1.0",
   "private": true,
   "scripts": {
