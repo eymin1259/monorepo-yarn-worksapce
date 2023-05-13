@@ -148,6 +148,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/snaps-editor/",\
           "packageDependencies": [\
             ["@snaps/snaps-editor", "workspace:apps/snaps-editor"],\
+            ["@snaps/lib", "workspace:packages/lib"],\
             ["@types/node", "npm:20.1.3"],\
             ["@types/react", "npm:18.2.6"],\
             ["@types/react-dom", "npm:18.2.4"],\
