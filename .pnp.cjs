@@ -18,11 +18,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@snaps/snaps-editor",\
         "reference": "workspace:apps/snaps-editor"\
+      },\
+      {\
+        "name": "@snaps/lib",\
+        "reference": "workspace:packages/lib"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@snaps/lib", ["workspace:packages/lib"]],\
       ["@snaps/snaps-editor", ["workspace:apps/snaps-editor"]],\
       ["monorepo-yarn-worksapce", ["workspace:."]]\
     ],\
@@ -126,6 +131,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@next/swc-win32-x64-msvc", "npm:13.4.2"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@snaps/lib", [\
+        ["workspace:packages/lib", {\
+          "packageLocation": "./packages/lib/",\
+          "packageDependencies": [\
+            ["@snaps/lib", "workspace:packages/lib"],\
+            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@snaps/snaps-editor", [\
