@@ -183,6 +183,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@snaps/admin@workspace:apps/admin":
+  version: 0.0.0-use.local
+  resolution: "@snaps/admin@workspace:apps/admin"
+  dependencies:
+    "@snaps/lib": "workspace:^"
+    "@snaps/ui": "workspace:^"
+    "@types/node": 20.1.3
+    "@types/react": 18.2.6
+    "@types/react-dom": 18.2.4
+    next: 13.4.2
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: 5.0.4
+  languageName: unknown
+  linkType: soft
+
 "@snaps/lib@workspace:^, @snaps/lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "@snaps/lib@workspace:packages/lib"
