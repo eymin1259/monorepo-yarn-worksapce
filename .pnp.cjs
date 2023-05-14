@@ -313,7 +313,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/ui", {\
           "packageLocation": "./packages/ui/",\
           "packageDependencies": [\
-            ["@snaps/ui", "workspace:packages/ui"]\
+            ["@snaps/ui", "workspace:packages/ui"],\
+            ["@types/node", "npm:20.1.4"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["@types/react-dom", "npm:18.2.4"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:ccdbea5fc3d75b3499347aa34886c8f8aa0cd0c350bf12723243f704865685c755fab52095ea05b972382813bfbb063e7e819b3951b405ff90c1b84edab5a7d0#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -351,6 +357,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-20.1.3-41726fb18f-abdb593f66.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:20.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:20.1.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.1.4-d60c29eee8-bffa6a6e92.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:20.1.4"]\
           ],\
           "linkType": "HARD"\
         }]\
