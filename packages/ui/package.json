@@ -1,6 +1,7 @@
 {
   "name": "@snaps/ui",
   "packageManager": "yarn@3.5.1",
+  "main": "src/index.ts",
   "devDependencies": {
     "@types/node": "^20.1.4",
     "@types/react": "^18.2.6",
