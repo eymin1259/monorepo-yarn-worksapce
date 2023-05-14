@@ -206,6 +206,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@snaps/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@snaps/ui@workspace:packages/ui"
+  languageName: unknown
+  linkType: soft
+
 "@swc/helpers@npm:0.5.1":
   version: 0.5.1
   resolution: "@swc/helpers@npm:0.5.1"

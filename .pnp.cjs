@@ -22,6 +22,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@snaps/lib",\
         "reference": "workspace:packages/lib"\
+      },\
+      {\
+        "name": "@snaps/ui",\
+        "reference": "workspace:packages/ui"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -29,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@snaps/lib", ["workspace:packages/lib"]],\
       ["@snaps/snaps-editor", ["workspace:apps/snaps-editor"]],\
+      ["@snaps/ui", ["workspace:packages/ui"]],\
       ["monorepo-yarn-worksapce", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -300,6 +305,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ccdbea5fc3d75b3499347aa34886c8f8aa0cd0c350bf12723243f704865685c755fab52095ea05b972382813bfbb063e7e819b3951b405ff90c1b84edab5a7d0#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@snaps/ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["@snaps/ui", "workspace:packages/ui"]\
           ],\
           "linkType": "SOFT"\
         }]\
